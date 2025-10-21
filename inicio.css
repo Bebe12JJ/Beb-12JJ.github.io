@@ -1,0 +1,130 @@
+/* Importamos la fuente especial desde Google Fonts para que todos puedan verla */
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+/* Reseteo básico para que los navegadores se comporten igual */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* Fuente base para toda la página */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+body {
+    /* Un fondo oscuro que va mejor con el tema "Eterna" */
+    background-color: #1a1a2e; 
+    color: #e0e0e0; /* Texto claro para que sea legible */
+    line-height: 1.6; /* Espacio entre líneas más cómodo */
+}
+
+/* Un contenedor principal para centrar todo el contenido 
+  y evitar que se estire demasiado en pantallas anchas 
+*/
+.container {
+    max-width: 960px;
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    padding: 0 15px; /* Evita que el contenido toque los bordes en móviles */
+}
+
+/* Estilo para el Título Principal (reemplaza a <center>) */
+#d1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#d1 h1 {
+    color: #f7b733; /* Un color dorado para el título */
+    font-size: 3.5rem; /* Tamaño de fuente más grande */
+    font-family: 'Uncial Antiqua', serif; /* Usamos la fuente especial */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para darle profundidad */
+}
+
+/* Estilo para el bloque de Historia */
+#Historia {
+    font-family: 'Uncial Antiqua', serif; /* Usamos la fuente especial */
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 750px; /* Hacemos la línea de texto más corta y legible */
+    margin: 30px auto; /* Centramos el bloque de historia */
+    color: #c0c0c0; /* Un gris un poco más suave */
+}
+
+/* Contenedor para la galería de imágenes */
+.gallery {
+    display: flex; /* Usamos Flexbox para alinear las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente línea */
+    justify-content: center; /* Centra las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 100%; /* Hace la imagen responsiva */
+    max-width: 300px; /* Mantiene el tamaño que definiste */
+    height: auto; /* Mantiene la proporción */
+    border: 3px solid #f7b733; /* Borde dorado a juego */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra suave */
+}
+
+/* Contenedor para centrar el botón (reemplaza a <center>) */
+.download-container {
+    text-align: center;
+    margin-bottom: 40px; /* Espacio antes del footer */
+}
+
+/* Estilo mejorado para el botón de descarga */
+button {
+    font-family: 'Uncial Antiqua', serif; /* Misma fuente temática */
+    font-size: 1.5rem;
+    color: #1a1a2e; /* Texto oscuro */
+    background-color: #f7b733; /* Fondo dorado */
+    padding: 15px 35px; /* Más espacio interno */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Muestra una manito al pasar el ratón */
+    text-decoration: none; /* Quitamos el 'overline' que se veía raro */
+    transition: all 0.3s ease; /* Transición suave para el hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Efecto al pasar el ratón por encima del botón */
+button:hover {
+    background-color: #fce18a; /* Un dorado más brillante */
+    transform: scale(1.05); /* Lo agranda ligeramente */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+/*
+===============================
+Estilos del Pie de Página (Footer)
+===============================
+*/
+
+footer {
+    background-color: #10101b; /* Un negro un poco más profundo para el footer */
+    color: #888; /* Color de texto gris y sutil */
+    text-align: center;
+    padding: 30px 15px; /* Espaciado interno */
+    margin-top: 50px; /* Espacio para separarlo del botón */
+    border-top: 1px solid #333; /* Una línea divisoria sutil */
+    font-size: 0.9rem; /* Texto un poco más pequeño */
+}
+
+footer p {
+    margin-bottom: 8px; /* Espacio entre cada línea */
+}
+
+/* Estilo para el enlace del correo */
+footer a {
+    color: #f7b733; /* El mismo color dorado del tema */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado solo al pasar el ratón */
+}
